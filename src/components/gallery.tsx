@@ -20,6 +20,7 @@ const filterForStory = (title: string): Exclude<GalleryFilter, "All"> =>
 
 export function GalleryPage() {
   const [filter, setFilter] = useState<GalleryFilter>("All");
+  const [visibleCount, setVisibleCount] = useState(24);
   const [lightbox, setLightbox] = useState<{ images: FieldImage[]; index: number } | null>(null);
 
   const entries = useMemo(
@@ -69,6 +70,8 @@ export function GalleryPage() {
     );
   }, []);
 
+  const visibleEntries = entries.slice(0, visibleCount);
+
   return (
     <div className="overflow-x-clip bg-bone font-sans text-ink antialiased">
       <ScrollProgress />
@@ -112,7 +115,10 @@ export function GalleryPage() {
                 {FILTERS.map((item) => (
                   <button
                     key={item}
-                    onClick={() => setFilter(item)}
+                    onClick={() => {
+                      setFilter(item);
+                      setVisibleCount(24);
+                    }}
                     aria-pressed={filter === item}
                     className={cn(
                       "border px-4 py-2.5 text-[10px] font-extrabold uppercase tracking-[0.2em] transition-colors",
@@ -128,7 +134,7 @@ export function GalleryPage() {
             </div>
 
             <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3">
-              {entries.map((entry, index) => (
+              {visibleEntries.map((entry, index) => (
                 <Reveal
                   key={`${entry.storyId}-${entry.src}`}
                   delay={(index % 3) * 60}
@@ -144,6 +150,7 @@ export function GalleryPage() {
                         src={entry.src}
                         alt={entry.alt}
                         loading="lazy"
+                        decoding="async"
                         className="block w-full transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                       />
                       <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-gradient-to-t from-ink/85 via-ink/55 to-transparent px-5 pb-5 pt-14 text-bone opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
@@ -157,6 +164,20 @@ export function GalleryPage() {
                 </Reveal>
               ))}
             </div>
+
+            {visibleCount < entries.length && (
+              <div className="mt-10 flex justify-center">
+                <button
+                  onClick={() => setVisibleCount((count) => count + 24)}
+                  className="neu-btn border border-ink/20 bg-bone px-6 py-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-ink transition-colors hover:border-clay hover:text-clay"
+                >
+                  Load more photos
+                  <span className="ml-2 text-ink-soft">
+                    ({entries.length - visibleCount} remaining)
+                  </span>
+                </button>
+              </div>
+            )}
 
             <div className="mt-20 border-t border-ink/15 pt-8">
               <a href="/#stories" className="group inline-flex items-center gap-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-pine transition-colors hover:text-clay">
