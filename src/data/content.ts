@@ -2,14 +2,20 @@
 /*  Siaya Empowerment Network — site content (factual foundation)      */
 /* ------------------------------------------------------------------ */
 
-const localImage = (folder: string, filename: string) =>
-  `/images/${folder ? `${folder}/` : ""}${filename.split("/").map(encodeURIComponent).join("/")}`;
-
 const LOCAL_IMAGE_MODULES = import.meta.glob("../../images/**/*.{jpeg,jpg,png,webp}", {
   eager: true,
   import: "default",
   query: "?url",
 }) as Record<string, string>;
+
+const localImage = (folder: string, filename: string) => {
+  const suffix = `/images/${folder ? `${folder}/` : ""}${filename}`;
+  const match = Object.entries(LOCAL_IMAGE_MODULES).find(([path]) => path.endsWith(suffix));
+  if (!match) {
+    throw new Error(`Missing local image asset: ${suffix}`);
+  }
+  return match[1];
+};
 
 export const LOCAL_IMAGES = Object.entries(LOCAL_IMAGE_MODULES)
   .filter(([path]) => !path.endsWith("/logo.jpeg") && !path.endsWith("/logo.png"))
