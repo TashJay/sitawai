@@ -52,7 +52,6 @@ const ENVIRONMENT_IMAGES = [
   "WhatsApp Image 2026-09-13 at 3.00.48 PM(1).jpeg",
   "WhatsApp Image 2026-09-13 at 3.00.48 PM.jpeg",
   "WhatsApp Image 2026-09-13 at 3.00.49 PM(1).jpeg",
-  "WhatsApp Image 2026-09-13 at 3.00.49 PM.jpeg",
   "WhatsApp Image 2026-09-13 at 3.00.50 PM(1).jpeg",
   "WhatsApp Image 2026-09-13 at 3.00.50 PM.jpeg",
 ].map((filename) => ({
