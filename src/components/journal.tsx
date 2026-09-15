@@ -197,6 +197,7 @@ export function FieldJournal() {
                       src={story.main.src}
                       alt={story.main.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.05]"
                     />
                   </div>
@@ -241,6 +242,7 @@ export function FieldJournal() {
                         src={img.src}
                         alt={img.alt}
                         loading="lazy"
+                        decoding="async"
                         className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       />
                     </div>
