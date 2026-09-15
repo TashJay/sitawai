@@ -168,6 +168,7 @@ export function AboutSen() {
                     src={IMG.elderPortrait.src}
                     alt={IMG.elderPortrait.alt}
                     loading="lazy"
+                    decoding="async"
                     className="size-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.06]"
                   />
                 </div>
