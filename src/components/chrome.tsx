@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { cn } from "../utils/cn";
 import { CONTACT, NAV_LINKS } from "../data/content";
+import logoUrl from "../../images/logo.png";
 
 /* ------------------------------ grain ------------------------------ */
 export function Grain() {
@@ -180,7 +181,7 @@ export function Nav() {
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 md:px-10">
           <a href="/" className="group flex items-center gap-3" aria-label="Siaya Empowerment Network — home">
             <img
-              src="/images/logo.png"
+              src={logoUrl}
               alt=""
               className="h-[4.2rem] w-[9.6rem] object-contain transition-transform duration-500 group-hover:scale-[1.03]"
             />
@@ -290,7 +291,7 @@ export function Footer() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
               <img
-                src="/images/logo.png"
+                src={logoUrl}
                 alt="Siaya Empowerment Network"
                 className="h-24 w-[14.4rem] object-contain"
               />
