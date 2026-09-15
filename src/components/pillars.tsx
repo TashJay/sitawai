@@ -112,6 +112,7 @@ export function Pillars() {
                       src={IMG.healthNurses.src}
                       alt={IMG.healthNurses.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.06]"
                     />
                   </div>
@@ -124,6 +125,7 @@ export function Pillars() {
                       src={IMG.healthClinic.src}
                       alt={IMG.healthClinic.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover"
                     />
                   </div>
@@ -165,6 +167,7 @@ export function Pillars() {
                       src={IMG.maizeField.src}
                       alt={IMG.maizeField.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.06]"
                     />
                   </div>
@@ -177,6 +180,7 @@ export function Pillars() {
                       src={IMG.treeSeedlings.src}
                       alt={IMG.treeSeedlings.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover"
                     />
                   </div>
@@ -247,6 +251,7 @@ export function Pillars() {
                       src={IMG.girlFlag.src}
                       alt={IMG.girlFlag.alt}
                       loading="lazy"
+                      decoding="async"
                       className="size-full object-cover transition-transform duration-[1800ms] ease-out hover:scale-[1.05]"
                     />
                   </div>
@@ -363,6 +368,7 @@ export function EducationMoment() {
                     src={IMG.outdoorClass.src}
                     alt={IMG.outdoorClass.alt}
                     loading="lazy"
+                    decoding="async"
                     className="size-full object-cover"
                   />
                 </div>
