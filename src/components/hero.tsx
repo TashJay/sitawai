@@ -139,6 +139,7 @@ export function Hero() {
                     src={IMG.aerialFarms.src}
                     alt={IMG.aerialFarms.alt}
                     loading="lazy"
+                    decoding="async"
                     className="size-full object-cover transition-transform duration-[1600ms] ease-out hover:scale-105"
                   />
                 </div>
