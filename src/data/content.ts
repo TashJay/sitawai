@@ -78,19 +78,28 @@ const TEAM_BUILDING_IMAGES = [
 }));
 
 export const IMG = {
-  heroPortrait: { src: ROOT_IMAGES[0], alt: "SEN community members gathered together in Siaya" },
+  heroPortrait: {
+    src: localImage("", "WhatsApp Image 2026-09-13 at 12.15.36 PM (2).jpeg"),
+    alt: "SEN community members gathered together in Siaya",
+  },
   aerialFarms: { src: ROOT_IMAGES[1], alt: "A local landscape and community setting in Siaya County" },
   maizeField: { src: ROOT_IMAGES[2], alt: "SEN community members working together outdoors" },
   riceFarmer: { src: ROOT_IMAGES[3], alt: "A community activity supported by SEN" },
   healthNurses: { src: ROOT_IMAGES[4], alt: "Community health workers and SEN partners" },
   healthClinic: { src: ROOT_IMAGES[5], alt: "Community members receiving support through SEN outreach" },
-  elderPortrait: { src: ROOT_IMAGES[6], alt: "A joyful SEN community member" },
+  elderPortrait: {
+    src: localImage("", "WhatsApp Image 2026-09-13 at 12.15.16 PM.jpeg"),
+    alt: "A joyful SEN community member",
+  },
   girlFlag: { src: ROOT_IMAGES[7], alt: "A young community member taking part in SEN activities" },
   youngMen: { src: ROOT_IMAGES[8], alt: "Young people connecting through SEN programmes" },
   outdoorClass: { src: ROOT_IMAGES[9], alt: "Young people learning together with SEN" },
   classroom: { src: ROOT_IMAGES[10], alt: "Learners taking part in a community training session" },
   readingBoys: { src: ROOT_IMAGES[11], alt: "Young people engaged in learning" },
-  treeSeedlings: { src: ENVIRONMENT_IMAGES[0].src, alt: ENVIRONMENT_IMAGES[0].alt },
+  treeSeedlings: {
+    src: localImage("environment", "WhatsApp Image 2026-09-13 at 1.43.31 PM.jpeg"),
+    alt: "SEN community members taking practical environmental action",
+  },
 };
 
 export interface FieldImage {
@@ -126,7 +135,10 @@ export const FIELD_STORIES: FieldStory[] = [
       label: "LAND — Climate-Smart Agriculture & Environmental Sustainability",
       href: "#work",
     },
-    main: ENVIRONMENT_IMAGES[0],
+    main: {
+      src: localImage("environment", "WhatsApp Image 2026-09-13 at 1.43.31 PM(1).jpeg"),
+      alt: "SEN community members taking practical environmental action",
+    },
     gallery: ENVIRONMENT_IMAGES.slice(1),
   },
   {
@@ -144,7 +156,10 @@ export const FIELD_STORIES: FieldStory[] = [
       label: "LAND — Environmental Sustainability in practice",
       href: "#work",
     },
-    main: COMMUNITY_IMAGES[0],
+    main: {
+      src: localImage("", "WhatsApp Image 2026-09-13 at 1.29.57 PM (1).jpeg"),
+      alt: "SEN community members working together on a local initiative",
+    },
     gallery: COMMUNITY_IMAGES.slice(1),
   },
   {
