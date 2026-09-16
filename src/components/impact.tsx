@@ -156,13 +156,6 @@ export function AboutSen() {
               />
 
               <div className="relative border border-ink/20 bg-bone shadow-[0_30px_60px_-30px_rgba(34,32,26,0.4)]">
-                <div className="flex items-center justify-between border-b border-ink/10 bg-parchment/90 px-4 py-2.5 text-[9px] font-extrabold uppercase tracking-[0.24em] text-ink-soft">
-                  <span className="flex items-center gap-2">
-                    <span className="size-1.5 bg-clay" aria-hidden />
-                    Community Portrait
-                  </span>
-                  <span>Siaya County</span>
-                </div>
                 <div className="aspect-[3/3.8] overflow-hidden">
                   <img
                     src={IMG.elderPortrait.src}
