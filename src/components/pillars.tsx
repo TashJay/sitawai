@@ -314,8 +314,8 @@ const EDUCATION_STEPS = [
 export function EducationMoment() {
   return (
     <section id="education" className="relative scroll-mt-24 overflow-hidden bg-clay py-24 text-bone md:py-32">
-      <span aria-hidden className="pointer-events-none absolute -top-6 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-display text-[16vw] leading-none text-bone/[0.06]">
-        Elimu ni Mwanga
+      <span aria-hidden className="pointer-events-none absolute left-1/2 top-4 w-full -translate-x-1/2 select-none px-5 text-center font-display text-[clamp(2.2rem,8vw,7rem)] leading-none tracking-tight text-bone/[0.06]">
+        elimu ni mwangaza
       </span>
       <div className="relative mx-auto max-w-[1400px] px-5 md:px-10">
         <Reveal>
