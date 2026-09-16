@@ -105,15 +105,6 @@ export function Hero() {
             {/* main documentary portrait — sharp rectilinear frame */}
             <Reveal dir="none" className="relative ml-auto w-[86%]">
               <div className="neu-raised-card relative border border-ink/20 bg-bone">
-                {/* archival classification header */}
-                <div className="neu-pressed flex items-center justify-between border-b border-ink/10 bg-parchment/80 px-4 py-2.5 text-[9px] font-extrabold uppercase tracking-[0.24em] text-ink-soft">
-                  <span className="flex items-center gap-2">
-                    <span className="size-1.5 bg-clay" aria-hidden />
-                    Field Record — Siaya
-                  </span>
-                  <span className="text-moss">SEN · 2025</span>
-                </div>
-
                 <div className="aspect-[3/3.8] overflow-hidden">
                   <img
                     src={IMG.heroPortrait.src}
