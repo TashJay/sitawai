@@ -175,6 +175,71 @@ export function AboutSen() {
           </div>
         </div>
 
+        <div className="mt-20 border-t border-ink/15 pt-12">
+          <Reveal>
+            <Eyebrow>Leadership</Eyebrow>
+          </Reveal>
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <Reveal delay={80}>
+              <article className="neu-raised-card overflow-hidden border border-ink/15 bg-bone">
+                <div className="aspect-[4/5] overflow-hidden bg-parchment">
+                  <img
+                    src={IMG.bramwelAsewe.src}
+                    alt={IMG.bramwelAsewe.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="size-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-2xl text-ink">Bramwel Asewe</h3>
+                  <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.2em] text-clay">
+                    Founder &amp; Director
+                  </p>
+                  <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+                    Bramwel founded SEN to turn attention to the issues this
+                    site exists to address into organised, practical work. A
+                    journalist who has followed those same questions, he
+                    started the organisation after seeing how often reporting
+                    named the problem without a place for people to act. He now
+                    leads SEN as Founder and Director, guiding its programmes
+                    and advocacy so the work on the ground stays close to the
+                    issues that first drew him in.
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            <Reveal delay={140}>
+              <article className="neu-raised-card overflow-hidden border border-ink/15 bg-bone">
+                <div className="grid aspect-[4/5] place-items-center bg-pine text-bone">
+                  <span className="font-display text-7xl text-gold">M</span>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-2xl text-ink">Myra</h3>
+                  <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.2em] text-clay">
+                    Marketing &amp; Communications Manager
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+
+            <Reveal delay={200}>
+              <article className="neu-raised-card overflow-hidden border border-ink/15 bg-bone">
+                <div className="grid aspect-[4/5] place-items-center bg-clay text-bone">
+                  <span className="font-display text-7xl text-gold">JG</span>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-2xl text-ink">Jay Gitau</h3>
+                  <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.2em] text-clay">
+                    Digital Communications Manager
+                  </p>
+                </div>
+              </article>
+            </Reveal>
+          </div>
+        </div>
+
         {/* vision + mission */}
         <div className="mt-20 grid gap-6 lg:grid-cols-12">
           <Reveal dir="left" className="lg:col-span-7">
