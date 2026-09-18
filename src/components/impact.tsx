@@ -212,13 +212,26 @@ export function AboutSen() {
 
             <Reveal delay={140}>
               <article className="neu-raised-card overflow-hidden border border-ink/15 bg-bone">
-                <div className="grid aspect-[4/5] place-items-center bg-pine text-bone">
-                  <span className="font-display text-7xl text-gold">M</span>
+                <div className="aspect-[4/5] overflow-hidden bg-parchment">
+                  <img
+                    src={IMG.myraTeddy.src}
+                    alt={IMG.myraTeddy.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="size-full object-cover object-top"
+                  />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-display text-2xl text-ink">Myra</h3>
+                  <h3 className="font-display text-2xl text-ink">Myra Teddy</h3>
                   <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.2em] text-clay">
                     Marketing &amp; Communications Manager
+                  </p>
+                  <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+                    Myra leads SEN’s marketing and communications, helping
+                    shape how the organisation’s work is presented and
+                    understood. She develops engaging communications that
+                    strengthen SEN’s visibility and connect its mission with
+                    communities, partners and supporters.
                   </p>
                 </div>
               </article>
@@ -226,13 +239,27 @@ export function AboutSen() {
 
             <Reveal delay={200}>
               <article className="neu-raised-card overflow-hidden border border-ink/15 bg-bone">
-                <div className="grid aspect-[4/5] place-items-center bg-clay text-bone">
-                  <span className="font-display text-7xl text-gold">JG</span>
+                <div className="aspect-[4/5] overflow-hidden bg-parchment">
+                  <img
+                    src={IMG.jamesIrungu.src}
+                    alt={IMG.jamesIrungu.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="size-full object-cover object-top"
+                  />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-display text-2xl text-ink">Jay Gitau</h3>
+                  <h3 className="font-display text-2xl text-ink">James Irungu</h3>
                   <p className="mt-1 text-[10px] font-extrabold uppercase tracking-[0.2em] text-clay">
                     Digital Communications Manager
+                  </p>
+                  <p className="mt-4 text-sm leading-relaxed text-ink-soft">
+                    James leads SEN’s digital communications, telling the
+                    stories behind its programmes and community work. He
+                    manages SEN’s digital presence and helps turn its work on
+                    the ground into clear, engaging content that connects
+                    communities, partners and supporters with the
+                    organisation’s mission.
                   </p>
                 </div>
               </article>
